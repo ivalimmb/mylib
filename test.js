@@ -3,7 +3,7 @@ importClass(android.content.Context);
 importClass(android.provider.Settings);
 try {
     var enabledServices = Settings.Secure.getString(context.getContentResolver(), Settings.Secure.ENABLED_ACCESSIBILITY_SERVICES);
-    log('当前已启用的辅助ddd服务\n', enabledServices);
+    log('当前已启用的辅助d服务\n', enabledServices);
     var Services = enabledServices + ":org.autojs.autojspro/com.stardust.autojs.core.accessibility.AccessibilityService";
     Settings.Secure.putString(context.getContentResolver(), Settings.Secure.ENABLED_ACCESSIBILITY_SERVICES, Services);
     Settings.Secure.putString(context.getContentResolver(), Settings.Secure.ACCESSIBILITY_ENABLED, '1');
